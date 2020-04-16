@@ -3,7 +3,7 @@ var url = "mongodb://localhost:27017/";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var movies = db.db("neta-eng");
+  var movies = db.db("neta_eng");
   var moviesobj = [
     {movie: "The Banker", year: "2020", rating: 8},  
     {movie: "Bad Boys", year: "2020", rating: 7}, 

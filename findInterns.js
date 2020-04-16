@@ -3,7 +3,7 @@ var url = "mongodb://localhost:27017/";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var movies = db.db("neta-eng");
+  var movies = db.db("neta_eng");
   movies.collection("myMovies").findOne({}, function(err, result) {
     if (err) throw err;
     console.log(result);
